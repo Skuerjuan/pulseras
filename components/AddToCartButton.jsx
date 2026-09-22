@@ -10,7 +10,7 @@ export default function AddToCartButton({ disabled }) {
       <button
         type="button"
         disabled
-        className="rounded-full bg-black/20 px-12 py-4 font-sans text-lg font-normal text-black/50"
+        className=" bg-black/20 px-12 py-4 font-sans text-lg font-normal text-black/50"
       >
         Sin stock
       </button>
@@ -21,7 +21,7 @@ export default function AddToCartButton({ disabled }) {
     <button
       type="button"
       onClick={() => setAdded(true)}
-      className="rounded-full bg-brand-blue px-14 py-4 font-sans text-xl font-normal text-white transition-transform duration-200 hover:-translate-y-0.5 hover:brightness-95 active:translate-y-0"
+      className="rounded-25% bg-brand-blue px-14 py-4 font-sans text-xl font-normal text-black transition-transform duration-200 hover:-translate-y-0.5 hover:brightness-95 active:translate-y-0.5 active:brightness-90 border-solid border-2 border-black bg-opacity-50"
     >
       {added ? "¡Agregado!" : "Agregar al carrito"}
     </button>
