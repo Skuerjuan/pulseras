@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import SocialLinks from "@/components/SocialLinks";
 import ProductCard from "@/components/ProductCard";
 import RevealOnScroll from "@/components/RevealOnScroll";
@@ -9,16 +10,17 @@ export default function Home() {
   const nuevosModelos = products.filter((product) => product.isNew).slice(0, 4);
 
   return (
-    <>
-      {/* Fondo de hojas a pantalla completa, sin márgenes blancos */}
+    <div className="relative isolate min-h-screen overflow-x-hidden">
+      {/* Capa independiente para que el fondo no quede detrás del body. */}
       <div
         aria-hidden="true"
-        className="fixed inset-0 -z-10 bg-[url('/images/bg-leaves-vertical.jpg')] bg-cover bg-center bg-no-repeat"
+        className="home-leaf-background pointer-events-none fixed inset-0 z-0"
       />
 
-      <Navbar />
+      <div className="relative z-10">
+        <Navbar />
 
-      <main className="relative">
+        <main>
         {/* HERO */}
         <section
           id="inicio"
@@ -80,7 +82,9 @@ export default function Home() {
             ))}
           </div>
         </section>
-      </main>
-    </>
+        </main>
+        <Footer />
+      </div>
+    </div>
   );
 }

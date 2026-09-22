@@ -5,7 +5,7 @@ import { formatPrice } from "@/data/products";
 export default function ProductCard({ product }) {
   return (
     <Link
-      href={`/producto/${product.id}`}
+      href={`/productos/${product.id}`}
       className="group block bg-white"
     >
       <div className="aspect-[3/4] bg-black p-2 transition-all duration-300 ease-out group-hover:-translate-y-1 group-hover:shadow-[0_0_0_4px_rgba(22,189,231,0.45)] group-hover:ring-2 group-hover:ring-brand-blue">

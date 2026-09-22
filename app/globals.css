@@ -15,3 +15,11 @@ body {
   color: #000000;
   background-color: #ffffff;
 }
+
+.home-leaf-background {
+  background-image: url("/images/bg-leaves-vertical.jpg");
+  background-position: center top;
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  opacity: 0.32;
+}

@@ -9,7 +9,7 @@ export default function ColorSwatches({ colors }) {
   );
 
   return (
-    <div className="flex justify-center gap-3 sm:justify-start">
+    <div className="flex justify-center gap-3">
       {colors.map((color, index) => {
         const isSelected = selected === index;
 
