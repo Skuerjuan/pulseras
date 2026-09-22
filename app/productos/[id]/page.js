@@ -56,7 +56,6 @@ export default function ProductoPage({ params }) {
             </div>
           </section>
         </main>
-        <Footer />
       </div>
     </div>
   );

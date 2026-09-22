@@ -11,7 +11,6 @@ export default function Home() {
 
   return (
     <div className="relative isolate min-h-screen overflow-x-hidden">
-      {/* Capa independiente para que el fondo no quede detrás del body. */}
       <div
         aria-hidden="true"
         className="home-leaf-background pointer-events-none fixed inset-0 z-0"
@@ -21,7 +20,6 @@ export default function Home() {
         <Navbar />
 
         <main>
-        {/* HERO */}
         <section
           id="inicio"
           className="relative mx-auto flex max-w-5xl flex-col-reverse items-center gap-10 px-6 pt-16 pb-14 text-center sm:flex-row sm:text-left"
@@ -43,19 +41,18 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative h-40 w-40 shrink-0 overflow-hidden rounded-[45%] sm:h-52 sm:w-52">
+          <div className="relative h- w-40 shrink-0 overflow-hidden rounded-[45%] sm:h-52 sm:w-52">
             <Image
               src="/images/profile.jpg"
               alt="Foto de Noe"
               fill
-              sizes="208px"
+              sizes="400px"
               className="object-cover"
               priority
             />
           </div>
         </section>
 
-        {/* NUEVOS MODELOS */}
         <section className="relative mx-auto max-w-5xl px-6 pb-20">
           <h2 className="text-center font-display text-5xl text-black underline decoration-1 underline-offset-[10px] sm:text-6xl">
             Nuevos modelos!
@@ -69,7 +66,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* CATALOGO */}
         <section id="catalogo" className="relative mx-auto max-w-5xl scroll-mt-24 px-6 pb-24">
           <h2 className="text-center font-display text-5xl text-black underline decoration-1 underline-offset-[10px] sm:text-6xl">
             Catálogo
