@@ -13,6 +13,9 @@ export default function Navbar() {
         >
           CATÁLOGO
         </Link>
+                <Link href="/" className="transition-colors hover:text-brand-blue">
+          CARRITO
+        </Link>
       </nav>
     </header>
   );
